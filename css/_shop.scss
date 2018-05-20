@@ -1,0 +1,55 @@
+#shop{
+  background: #f2f2f2;
+  .product{
+    width: 100%;
+    // background: #b3b3b3;
+    box-sizing: border-box;
+    padding: 5px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 1px 1px rgba(115, 115, 115, .1);
+    background: #fff;
+    .imgbox{
+      img{
+        width: 100%;
+        // background: black;
+        box-sizing: border-box;
+      }
+    }
+    // button{
+    //   width: 170px;
+    //   background: #fc0;
+    //   margin-left: 15%;
+    //   text-align: center;
+    //   padding: 5px;
+    //   border-radius: 20px;
+    // }
+    .details{
+      padding: 20px;
+      h2{
+        color: black;
+      }
+      .price{
+        text-align: center;
+        padding: 10px;
+        color: red;
+      }
+    }
+  }
+  .chat{
+    width: 237px;
+    height: 45px;
+    background: #fc0;
+    float: right;
+    bottom: 0;
+    right: 0px;
+    position: fixed;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    svg{
+      font-size: 1em;
+      // left: 0;
+      // position: absolute;
+    }
+  }
+}

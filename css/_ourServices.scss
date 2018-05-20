@@ -1,0 +1,59 @@
+#ourServices{
+  width: 100%;
+  background: #EFEFEF;
+  padding: 60px 0px;
+  h1{
+    margin: 0;
+    letter-spacing: -1px;
+    font: normal 57px/48px Open Sans;
+    color: #3b3b3b;
+    text-align: center;
+
+  }
+  p{
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 300 !important;
+    color: #6d747a;
+    text-align: center;
+  }
+  .services{
+    width: 100%;
+    margin-top: 100px;
+    border: 1px solid #d8dadc;
+    background: #fff;
+    position:relative;
+    .circle{
+      width: 100px;
+      height: 100px;
+      background: #fff;
+      border-radius: 80px;
+      margin-left: 30%;
+      margin-top: -40px;
+      border: 1px solid #d8dadc;
+      overflow: hidden;
+      &:hover{
+        background: linear-gradient(-45deg, #f403d1, #64b5f6);
+      }
+      // &:hover img{
+      //   background: red;
+      // }
+    }
+    h2{
+      text-align: center;
+      color: #3b3b3b;
+      hyphens: auto;
+      line-height: 44px;
+      font-size: 24px;
+      font-weight: 700 !important;
+      text-transform: uppercase;
+    }
+    p{
+      line-height: 18px;
+      font-size: 14px;
+      font-weight: 300;
+      text-align: center;
+      color: #6d747a;
+    }
+  }
+}

@@ -1,0 +1,1727 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Unicase|Indie+Flower|Josefin+Slab|Poiret+One");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+#header .navbar {
+  padding: 0;
+}
+#header .collapse {
+  padding: 5px;
+}
+#header .nav-link {
+  font-size: 1em;
+  padding: 15px;
+  color: #f9c001;
+  margin-left: 10px;
+}
+#header .nav-link:hover {
+  color: gray;
+}
+
+#myVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#guide {
+  cursor: pointer;
+}
+#guide .travel h2 {
+  text-align: center;
+  padding: 25px;
+  font: normal 57px/48px Open Sans;
+  color: #3b3b3b;
+}
+#guide .travel p {
+  text-align: center;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 300 !important;
+  color: #adadb3;
+}
+#guide .about .first {
+  width: 100px;
+  height: 100px;
+  background: #f9c001;
+  border-radius: 50px;
+}
+#guide .about .first:hover {
+  background: #f9c001;
+}
+#guide .about h1 {
+  font-size: 1.5em;
+}
+#guide .about h1:hover {
+  color: #fc0;
+}
+#guide .about .flip3d {
+  width: 110px;
+  height: 200px;
+  margin: 10px;
+  float: left;
+}
+#guide .about .flip3d .front {
+  position: absolute;
+  -webkit-transform: perspective(500px) rotateY(0deg);
+  transform: perspective(500px) rotateY(0deg);
+  background: #dcdcdd;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: -webkit-transform .5s linear 0s;
+  transition: transform .5s linear 0s;
+}
+#guide .about .flip3d .front img {
+  width: 100%;
+}
+#guide .about .flip3d .back {
+  position: absolute;
+  -webkit-transform: perspective(500px) rotateY(180deg);
+  transform: perspective(500px) rotateY(180deg);
+  background: #fc0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: -webkit-transform .5s linear 0s;
+  transition: transform .5s linear 0s;
+}
+#guide .about .flip3d .back img {
+  width: 100%;
+}
+#guide .about .flip3d:hover .front {
+  -webkit-transform: perspective(600px) rotateY(-180deg);
+  transform: perspective(600px) rotateY(-180deg);
+}
+#guide .about .flip3d:hover .back {
+  -webkit-transform: perspective(600px) rotateY(0deg);
+  transform: perspective(600px) rotateY(0deg);
+}
+
+#ourTeam {
+  width: 100%;
+  background: #f9c001;
+}
+#ourTeam .text h1 {
+  text-align: center;
+  padding: 30px;
+  color: #fff;
+  font: normal 57px/48px Open Sans;
+  font-size: 4.5em;
+}
+#ourTeam .text p {
+  text-align: center;
+  padding: 2px;
+  color: #fff;
+}
+#ourTeam .personBox {
+  width: 100%;
+  background: #fff;
+  box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.22);
+}
+#ourTeam .personBox img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+#ourTeam .personBox h2 {
+  text-align: center;
+  color: #f9c001;
+  padding: 20px;
+  letter-spacing: -0.5px;
+  line-height: 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700 !important;
+}
+#ourTeam .personBox p {
+  text-align: center;
+  margin-top: -40px;
+  margin-bottom: 5rem;
+  padding: 15px;
+  line-height: 16px;
+  font-size: 12px;
+  color: #6d747a;
+  font-family: Open Sans;
+}
+
+#whatWeDo {
+  width: 100%;
+}
+#whatWeDo .parallax {
+  width: 100%;
+  background-image: url(../img/parallax.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#whatWeDo .parallax h1 {
+  text-align: center;
+  color: #fff;
+  padding: 30px;
+}
+#whatWeDo .parallax .recent-posts {
+  width: 100%;
+}
+#whatWeDo .parallax .recent-posts img {
+  margin: 10px 100px;
+}
+#whatWeDo .parallax .recent-posts h2 {
+  hyphens: auto;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 900 !important;
+  text-transform: uppercase;
+  color: #f9c001;
+  text-align: center;
+}
+#whatWeDo .parallax .recent-posts p {
+  line-height: 21px;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#ourServices {
+  width: 100%;
+  background: #EFEFEF;
+  padding: 60px 0px;
+}
+#ourServices h1 {
+  margin: 0;
+  letter-spacing: -1px;
+  font: normal 57px/48px Open Sans;
+  color: #3b3b3b;
+  text-align: center;
+}
+#ourServices p {
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 300 !important;
+  color: #6d747a;
+  text-align: center;
+}
+#ourServices .services {
+  width: 100%;
+  margin-top: 100px;
+  border: 1px solid #d8dadc;
+  background: #fff;
+  position: relative;
+}
+#ourServices .services .circle {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border-radius: 80px;
+  margin-left: 30%;
+  margin-top: -40px;
+  border: 1px solid #d8dadc;
+  overflow: hidden;
+}
+#ourServices .services .circle:hover {
+  background: linear-gradient(-45deg, #f403d1, #64b5f6);
+}
+#ourServices .services h2 {
+  text-align: center;
+  color: #3b3b3b;
+  hyphens: auto;
+  line-height: 44px;
+  font-size: 24px;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+}
+#ourServices .services p {
+  line-height: 18px;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  color: #6d747a;
+}
+
+.gallery {
+  text-align: center;
+  padding: 30px;
+  background: #fc0;
+  color: #fff;
+}
+
+#ourGallery {
+  width: 100%;
+  padding: 40px 0px;
+  background-image: url(../img/parallax_1.jpg);
+  object-fit: cover;
+}
+#ourGallery .box {
+  width: 330px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+#ourGallery .box img {
+  width: 63%;
+  height: 220px;
+  object-fit: cover;
+  transition: all .8s ease;
+  cursor: pointer;
+}
+#ourGallery .box img:hover {
+  transform: scale(1.2);
+  filter: brightness(0.5);
+}
+#ourGallery button {
+  width: 200px;
+  height: 35px;
+  position: relative;
+  left: calc(50% - 100px);
+  margin-top: 20px;
+  border-radius: 50px;
+  background: #fc3;
+}
+#ourGallery * {
+  transition: all 2s;
+}
+#ourGallery #container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective();
+  transform-origin: center center -100px;
+  margin-top: 20px;
+}
+#ourGallery #container:hover {
+  transform: perspective(0px) rotateY(270deg);
+}
+#ourGallery #container div {
+  width: 200px;
+  height: 200px;
+  border: 2px solid silver;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+#ourGallery img {
+  width: 100%;
+  height: auto;
+}
+#ourGallery #div1 {
+  transform: perspective(0px);
+}
+#ourGallery #div2 {
+  transform: perspective(0px) translateX(-100px) translateZ(-100px) rotateY(90deg);
+}
+#ourGallery #div3 {
+  transform: perspective(0px) translateX(0px) translateZ(-200px) rotateY(180deg);
+}
+#ourGallery #div4 {
+  transform: perspective(0px) translateX(100px) translateZ(-100px) rotateY(90deg);
+  background: #D5713F;
+  color: white;
+  line-height: 200px;
+  font-family: Arial;
+  text-align: center;
+}
+#ourGallery #button {
+  width: 100px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+#ourGallery .chat {
+  width: 250px;
+  height: 45px;
+  background: #fc0;
+  float: right;
+  bottom: 0;
+  right: 0px;
+  position: fixed;
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+}
+#ourGallery .chat svg {
+  font-size: 1em;
+}
+
+#footer {
+  width: 100%;
+  background: #333;
+}
+#footer a {
+  font-size: 1.3em;
+  margin-left: 5px;
+  color: #fff;
+}
+#footer a:hover {
+  color: #fc0;
+}
+#footer svg {
+  font-size: 1em;
+  margin-top: 30px;
+  margin-right: 5px;
+  text-decoration: none;
+  color: #fff;
+}
+#footer svg:hover {
+  color: #fc0;
+}
+
+#reklam {
+  width: 100%;
+  height: 200px;
+  background: black;
+  font-size: 4em;
+  color: #fff;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+#payServices {
+  width: 100%;
+  padding: 140px 0;
+  background-image: url(../img/maxresdefault.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.card1 {
+  position: relative;
+  max-width: 300px;
+  background: rgba(0, 0, 0, 0.56);
+  margin: 0 auto;
+  padding: 40px 20px;
+  transition: .5s;
+  text-align: center;
+  border-radius: 7px;
+  border: 1px solid #fff;
+}
+
+.card2 {
+  position: relative;
+  max-width: 500px;
+  height: 680px;
+  background: rgba(0, 0, 0, 0.56);
+  margin: -65px auto;
+  padding: 40px 20px;
+  transition: .5s;
+  text-align: center;
+  border-radius: 7px;
+  border: 1px solid #fff;
+}
+
+.col-sm-4:nth-child(1).card1 {
+  background: linear-gradient(-45deg, #f403d1, #64b5f6);
+}
+
+.card:before {
+  content: '';
+  position: absolute;
+  border: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 2;
+  transform: skewY(-5deg) scale(1.5);
+}
+
+.title {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 30%;
+  margin-bottom: 30px;
+  line-height: 100px;
+  box-shadow: 0 10px 10px #fff;
+}
+
+.title svg {
+  color: #fff;
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.option {
+  position: relative;
+  z-index: 2;
+}
+
+.option2 {
+  position: relative;
+  z-index: 2;
+}
+
+.option ul {
+  margin: 0;
+  padding: 0;
+}
+
+.option2 ul {
+  margin: 0;
+  padding: 0;
+}
+
+.option ul li {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+  color: #fff;
+  font-size: 16px;
+  text-align: 20px;
+}
+
+.option2 ul li {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+  color: #fff;
+  font-size: 19px;
+  text-align: 20px;
+}
+
+.card1 h2 {
+  color: #fff;
+}
+
+.card2 h2 {
+  color: #fff;
+}
+
+.card1 h4 {
+  color: #fff;
+  padding: 20px 0;
+  font-size: 3em;
+}
+
+.card2 h4 {
+  color: #fff;
+  padding: 20px 0;
+  font-size: 5em;
+}
+
+.card1 a {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  color: black;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 7px;
+  display: block;
+  text-align: center;
+  margin: 20px auto 0;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.card1 a:hover {
+  background: #fc0;
+}
+
+.card2 a {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  color: black;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 7px;
+  display: block;
+  text-align: center;
+  margin: 95px auto 0;
+  list-style: none;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.card2 a:hover {
+  background: #fc0;
+}
+
+.card1 a:hover {
+  text-decoration: none;
+}
+
+.card1 a:hover {
+  text-decoration: none;
+}
+
+#hotel {
+  width: 100%;
+}
+#hotel .text {
+  text-align: center;
+}
+#hotel .text h1 {
+  font-size: 4em;
+}
+#hotel .star img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+#hotel img {
+  width: 100%;
+}
+#hotel .rooms {
+  width: 100%;
+  background: #f2f2f2;
+}
+#hotel .rooms .left h3 {
+  font-family: Playfair Display;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+  padding: 17px;
+  margin-top: 100px;
+}
+#hotel .rooms .left p {
+  padding: 20px;
+  font-family: Source Sans Pro;
+  line-height: 1.5;
+}
+#hotel .rooms .right img {
+  width: 100%;
+  height: 320px;
+  padding: 20px;
+  margin-top: 70px;
+}
+#hotel .rooms .chat {
+  width: 237px;
+  height: 45px;
+  background: #fc0;
+  float: right;
+  bottom: 0;
+  right: 0px;
+  position: fixed;
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+}
+#hotel .rooms .chat svg {
+  font-size: 1em;
+}
+#hotel .about p {
+  text-align: center;
+}
+
+.comments {
+  width: 100%;
+  padding: 20px;
+  background: rgba(230, 230, 230, 0.3);
+  font-weight: 600;
+}
+.comments svg {
+  color: #fc0;
+  padding: 5px;
+  font-size: 20px;
+}
+.comments p {
+  font-family: 'Josefin Slab', serif;
+}
+.comments button {
+  width: 115px;
+  padding: 7px;
+  background: #fc0;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.text {
+  width: 100%;
+}
+.text textarea {
+  width: 100%;
+}
+
+#auto {
+  width: 100%;
+}
+#auto #gray {
+  background: #f2f2f2;
+}
+#auto img {
+  width: 100%;
+}
+#auto h1 {
+  text-align: center;
+}
+#auto .box {
+  width: 100%;
+  padding: 20px 0;
+}
+#auto .box svg {
+  margin-left: 40%;
+  font-size: 2em;
+  color: #fc3;
+}
+#auto .box p {
+  margin-left: 20px;
+  font-size: .8em;
+}
+#auto ul {
+  list-style-type: none;
+  padding: 20px;
+}
+#auto ul svg {
+  margin-right: 20px;
+  color: #fc3;
+}
+#auto .line {
+  width: 100%;
+  height: 2px;
+  background: #fc3;
+}
+#auto h2 {
+  padding: 10px;
+}
+#auto .chat {
+  width: 237px;
+  height: 45px;
+  background: #fc0;
+  float: right;
+  bottom: 0;
+  right: 0px;
+  position: fixed;
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+}
+#auto .chat svg {
+  font-size: 1em;
+}
+
+#hostel {
+  width: 100%;
+}
+#hostel #gray {
+  background: #f2f2f2;
+}
+#hostel h1 {
+  text-align: center;
+}
+#hostel .box {
+  width: 100%;
+  padding: 20px 0;
+}
+#hostel .box svg {
+  margin-left: 40%;
+  font-size: 2em;
+  color: #fc3;
+}
+#hostel .box p {
+  margin-left: 20px;
+  font-size: .8em;
+}
+#hostel ul {
+  list-style-type: none;
+}
+#hostel ul svg {
+  margin-right: 10px;
+  color: #fc3;
+}
+#hostel .line {
+  width: 100%;
+  height: 2px;
+  background: #fc3;
+}
+#hostel h2 {
+  padding: 10px;
+}
+#hostel .chat {
+  width: 237px;
+  height: 45px;
+  background: #fc0;
+  float: right;
+  bottom: 0;
+  right: 0px;
+  position: fixed;
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+}
+#hostel .chat svg {
+  font-size: 1em;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+h2 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 0;
+}
+
+.carousel {
+  padding: 20px;
+  perspective: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carousel > * {
+  flex: 0 0 auto;
+}
+.carousel figure {
+  margin: 0;
+  width: 40%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.carousel figure img {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0px;
+}
+.carousel figure img:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.carousel nav {
+  display: flex;
+  justify-content: center;
+  margin: 70px 0 0;
+}
+.carousel nav button {
+  flex: 0 0 auto;
+  margin: 90 5px;
+  cursor: pointer;
+  color: #333;
+  background: none;
+  border: 1px solid;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+h2 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 0;
+}
+
+.carousel {
+  padding: 20px;
+  perspective: 1000px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carousel > * {
+  flex: 0 0 auto;
+}
+.carousel figure {
+  margin: 0;
+  width: 40%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.carousel figure img {
+  width: 100%;
+  height: 300px;
+  box-sizing: border-box;
+  padding: 0 0px;
+}
+.carousel figure img:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.carousel nav {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 0;
+}
+.carousel nav button {
+  flex: 0 0 auto;
+  margin: 10px 5px;
+  cursor: pointer;
+  color: #333;
+  background: none;
+  border: 1px solid;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
+
+#rest {
+  width: 100%;
+}
+#rest .text {
+  text-align: center;
+}
+#rest .text h1 {
+  font-size: 4em;
+}
+#rest .star img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+#rest img {
+  width: 100%;
+}
+#rest .rooms {
+  width: 100%;
+  background: #f2f2f2;
+}
+#rest .rooms .left h3 {
+  font-family: Playfair Display;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-top: 100px;
+}
+#rest .rooms .left p {
+  padding: 20px;
+  font-family: Source Sans Pro;
+  line-height: 1.5;
+}
+#rest .rooms .right img {
+  width: 100%;
+  height: 320px;
+  padding: 20px;
+  margin-top: 70px;
+  border-style: inset;
+  border-style: outset;
+}
+#rest .chat {
+  width: 237px;
+  height: 45px;
+  background: #fc0;
+  float: right;
+  bottom: 0;
+  right: 0px;
+  position: fixed;
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+}
+#rest .chat svg {
+  font-size: 1em;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev1,
+.next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev1:hover,
+.next2:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#village {
+  width: 100%;
+}
+#village #gray {
+  background: #f2f2f2;
+}
+#village img {
+  width: 100%;
+}
+#village h1 {
+  text-align: center;
+}
+#village .box {
+  width: 100%;
+  padding: 20px 0;
+}
+#village .box svg {
+  margin-left: 40%;
+  font-size: 2em;
+  color: #fc3;
+}
+#village .box p {
+  margin-left: 20px;
+  font-size: .8em;
+}
+#village ul {
+  list-style-type: none;
+  padding: 20px;
+}
+#village ul svg {
+  margin-right: 20px;
+  color: #fc3;
+}
+#village .line {
+  width: 100%;
+  height: 2px;
+  background: #fc3;
+}
+#village h2 {
+  padding: 10px;
+}
+#village .chat {
+  width: 237px;
+  height: 45px;
+  background: #fc0;
+  float: right;
+  bottom: 0;
+  right: 0px;
+  position: fixed;
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+}
+#village .chat svg {
+  font-size: 1em;
+}
+
+#photo {
+  width: 100%;
+}
+#photo #gray {
+  background: #f2f2f2;
+}
+#photo img {
+  width: 100%;
+}
+#photo h1 {
+  text-align: center;
+}
+#photo .box {
+  width: 100%;
+  padding: 20px 0;
+}
+#photo .box svg {
+  margin-left: 40%;
+  font-size: 2em;
+  color: #fc3;
+}
+#photo .box p {
+  margin-left: 20px;
+  font-size: .8em;
+}
+#photo ul {
+  list-style-type: none;
+  padding: 20px;
+}
+#photo ul svg {
+  margin-right: 20px;
+  color: #fc3;
+}
+#photo .line {
+  width: 100%;
+  height: 2px;
+  background: #fc3;
+}
+#photo h2 {
+  padding: 10px;
+}
+#photo .chat {
+  width: 237px;
+  height: 45px;
+  background: #fc0;
+  float: right;
+  bottom: 0;
+  right: 0px;
+  position: fixed;
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+}
+#photo .chat svg {
+  font-size: 1em;
+}
+
+#cloth {
+  width: 100%;
+}
+#cloth #gray {
+  background: #f2f2f2;
+}
+#cloth img {
+  width: 100%;
+}
+#cloth h1 {
+  text-align: center;
+}
+#cloth .box {
+  width: 100%;
+  padding: 20px 0;
+}
+#cloth .box svg {
+  margin-left: 40%;
+  font-size: 2em;
+  color: #fc3;
+}
+#cloth .box p {
+  margin-left: 20px;
+  font-size: .8em;
+}
+#cloth ul {
+  list-style-type: none;
+  padding: 20px;
+}
+#cloth ul svg {
+  margin-right: 20px;
+  color: #fc3;
+}
+#cloth .line {
+  width: 100%;
+  height: 2px;
+  background: #fc3;
+}
+#cloth h2 {
+  padding: 10px;
+}
+#cloth .chat {
+  width: 237px;
+  height: 45px;
+  background: #fc0;
+  float: right;
+  bottom: 0;
+  right: 0px;
+  position: fixed;
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+}
+#cloth .chat svg {
+  font-size: 1em;
+}
+
+#shop {
+  background: #f2f2f2;
+}
+#shop .product {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 1px 1px rgba(115, 115, 115, 0.1);
+  background: #fff;
+}
+#shop .product .imgbox img {
+  width: 100%;
+  box-sizing: border-box;
+}
+#shop .product .details {
+  padding: 20px;
+}
+#shop .product .details h2 {
+  color: black;
+}
+#shop .product .details .price {
+  text-align: center;
+  padding: 10px;
+  color: red;
+}
+#shop .chat {
+  width: 237px;
+  height: 45px;
+  background: #fc0;
+  float: right;
+  bottom: 0;
+  right: 0px;
+  position: fixed;
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+}
+#shop .chat svg {
+  font-size: 1em;
+}
+
+#contact {
+  width: 100%;
+  background-size: cover;
+  background-image: url(../img/cont1.jpg);
+}
+#contact .left {
+  color: #fff;
+  padding: 20px;
+}
+#contact .left h3 {
+  font-size: .9em;
+  font-weight: 100;
+}
+#contact .left h5 {
+  font-size: 1em;
+  color: #fc0;
+  margin-top: 106px;
+  font-weight: 100 !important;
+}
+#contact .left .p {
+  margin-top: 32px;
+}
+#contact .left .p p {
+  font-size: 1em;
+  line-height: 10px;
+  font-weight: 100 !important;
+}
+#contact input[type=text], #contact select, #contact textarea {
+  width: 100%;
+  padding: 5px;
+  border: .4px solid #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background: rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+#contact input[type=text]::placeholder, #contact select::placeholder, #contact textarea::placeholder {
+  color: #fff;
+  font-size: .8em;
+}
+#contact input[type=submit] {
+  color: black;
+  padding: 5px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#contact input[type=submit]:hover {
+  background-color: #fc0;
+}
+#contact .container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.left1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: red;
+}
+
+.right1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: red;
+}
+.right1 .chat {
+  width: 237px;
+  height: 45px;
+  background: #fc0;
+  float: right;
+  bottom: 0;
+  right: 0px;
+  position: fixed;
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+}
+.right1 .chat svg {
+  font-size: 1em;
+}
+
+#hotel {
+  width: 100%;
+}
+#hotel a {
+  text-decoration: none;
+}
+#hotel .hotel {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+#hotel .hotel img {
+  width: 100%;
+  height: 60%;
+}
+#hotel .hotel .star img {
+  width: 138px;
+  height: 30px;
+  margin-left: 70px;
+}
+#hotel .hotel h2 {
+  font-family: 'Lobster', cursive;
+  color: black;
+}
+
+.orxan {
+  /* Full-width input fields */
+  /* Add a background color when the inputs get focus */
+  /* Set a style for all buttons */
+  /* Extra styles for the cancel button */
+  /* Float cancel and signup buttons and add an equal width */
+  /* Add padding to container elements */
+  /* The Modal (background) */
+  /* Modal Content/Box */
+  /* Style the horizontal ruler */
+  /* The Close Button (x) */
+  /* Clear floats */
+  /* Change styles for cancel button and signup button on extra small screens */
+}
+.orxan input[type=text], .orxan input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.orxan input[type=text]:focus, .orxan input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.orxan button {
+  color: #fc0;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.orxan button:hover {
+  opacity: 1;
+}
+.orxan .cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+.orxan .cancelbtn, .orxan .signupbtn {
+  float: left;
+  width: 50%;
+}
+.orxan .container {
+  padding: 16px;
+}
+.orxan .modal {
+  display: none;
+  /* Hidden by default */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: scroll !important;
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+.orxan .modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+.orxan hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.orxan .close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+.orxan .close:hover,
+.orxan .close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+.orxan .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 300px) {
+  .orxan .cancelbtn, .orxan .signupbtn {
+    width: 100%;
+  }
+}
+
+.orxan2 {
+  /* Full-width input fields */
+  /* Set a style for all buttons */
+  /* Extra styles for the cancel button */
+  /* Center the image and position the close button */
+  /* The Modal (background) */
+  /* Modal Content/Box */
+  /* The Close Button (x) */
+  /* Add Zoom Animation */
+  /* Change styles for span and cancel button on extra small screens */
+}
+.orxan2 input[type=text], .orxan2 input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.orxan2 button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.orxan2 button:hover {
+  opacity: 0.8;
+}
+.orxan2 .cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+.orxan2 .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+.orxan2 img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+.orxan2 .container {
+  padding: 16px;
+}
+.orxan2 span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.orxan2 .modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+.orxan2 .modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%;
+  /* Could be more or less, depending on screen size */
+}
+.orxan2 .close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.orxan2 .close:hover,
+.orxan2 .close:focus {
+  color: red;
+  cursor: pointer;
+}
+.orxan2 .animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 300px) {
+  .orxan2 span.psw {
+    display: block;
+    float: none;
+  }
+  .orxan2 .cancelbtn {
+    width: 100%;
+  }
+}
+
+.yellowHeader {
+  width: 100%;
+  background: #fc0;
+  color: #fff;
+  padding: 5px;
+}
+
+#lastTours {
+  width: 100%;
+  padding: 10px;
+}
+#lastTours a {
+  text-decoration: none;
+}
+#lastTours .tours {
+  width: 100%;
+  padding: 5px;
+  color: black;
+  list-style: none;
+}
+#lastTours .tours .imgBox {
+  width: 100%;
+  height: 40%;
+}
+#lastTours .tours .imgBox img {
+  width: 100%;
+}
+
+#logo {
+  width: 100%;
+  background: #fc0;
+  padding: 10px;
+}
+#logo .logo_img {
+  width: 100%;
+  height: 100%;
+}
+#logo .logo_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#logo .langs {
+  width: 100%;
+  position: relative;
+  top: 30%;
+}
+#logo .langs .flag {
+  width: 100%;
+  height: 100%;
+}
+#logo .langs .flag img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+#logo button {
+  color: white;
+  border: none;
+  background: #fc0;
+  cursor: pointer;
+}
+#logo .navbar-nav {
+  position: relative;
+  top: 15%;
+  left: 25%;
+}
+
+.tour {
+  width: 100%;
+}
+.tour .img {
+  width: 100%;
+  height: 50%;
+}
+.tour .img img {
+  width: 100%;
+  height: 100%;
+}
+.tour .comments {
+  width: 100%;
+  padding: 20px;
+  background: rgba(230, 230, 230, 0.3);
+  font-weight: 600;
+}
+
+.text {
+  padding: 35px;
+}
+
+/*# sourceMappingURL=style.css.map */

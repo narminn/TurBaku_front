@@ -1,0 +1,299 @@
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+h2 {
+	text-align: center;
+	color: #555;
+  margin-bottom: 0;
+}
+
+// Carousel configuration parameters
+$item-width: 40%; // Now we can use percentages!
+$item-separation: 0px; // This now is set with Js
+$viewer-distance: 500px;
+
+.carousel {
+	padding: 20px;
+
+	perspective: $viewer-distance;
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	> * {
+		flex: 0 0 auto;
+	}
+
+	figure {
+		margin: 0;
+
+		width: $item-width;
+		transform-style: preserve-3d;
+		transition: transform 0.5s;
+
+		img {
+			width: 100%;
+			box-sizing: border-box;
+			padding: 0 $item-separation / 2;
+
+			&:not(:first-of-type) {
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		}
+	}
+
+	nav {
+		display: flex;
+		justify-content: center;
+		margin: 70px 0 0;
+
+		button {
+			flex: 0 0 auto;
+			margin: 90 5px;
+
+			cursor: pointer;
+
+			color: #333;
+			background: none;
+			border: 1px solid;
+			letter-spacing: 1px;
+			padding: 5px 10px;
+		}
+	}
+
+}
+
+
+
+
+
+// body{
+// font-family: Verdana, sans-serif;
+//   margin: 0;
+// }
+//
+// * {
+//   box-sizing: border-box;
+// }
+//
+// .row > .column {
+//   padding: 0 8px;
+// }
+//
+// .row:after {
+//   content: "";
+//   display: table;
+//   clear: both;
+// }
+//
+// .column {
+//   float: left;
+//   width: 25%;
+// }
+//
+// /* The Modal (background) */
+// .modal {
+//   display: none;
+//   position: fixed;
+//   z-index: 1;
+//   padding-top: 100px;
+//   left: 0;
+//   top: 0;
+//   width: 100%;
+//   height: 100%;
+//   overflow: auto;
+//   background-color: black;
+// }
+//
+// /* Modal Content */
+// .modal-content {
+//   position: relative;
+//   background-color: #fefefe;
+//   margin: auto;
+//   padding: 0;
+//   width: 90%;
+//   max-width: 1200px;
+// }
+//
+// /* The Close Button */
+// .close {
+//   color: white;
+//   position: absolute;
+//   top: 10px;
+//   right: 25px;
+//   font-size: 35px;
+//   font-weight: bold;
+// }
+//
+// .close:hover,
+// .close:focus {
+//   color: #999;
+//   text-decoration: none;
+//   cursor: pointer;
+// }
+//
+// .mySlides {
+//   display: none;
+// }
+//
+// .cursor {
+//   cursor: pointer
+// }
+//
+// /* Next & previous buttons */
+// .prev,
+// .next {
+//   cursor: pointer;
+//   position: absolute;
+//   top: 50%;
+//   width: auto;
+//   padding: 16px;
+//   margin-top: -50px;
+//   color: white;
+//   font-weight: bold;
+//   font-size: 20px;
+//   transition: 0.6s ease;
+//   border-radius: 0 3px 3px 0;
+//   user-select: none;
+//   -webkit-user-select: none;
+// }
+//
+// /* Position the "next button" to the right */
+// .next {
+//   right: 0;
+//   border-radius: 3px 0 0 3px;
+// }
+//
+// /* On hover, add a black background color with a little bit see-through */
+// .prev:hover,
+// .next:hover {
+//   background-color: rgba(0, 0, 0, 0.8);
+// }
+//
+// /* Number text (1/3 etc) */
+// .numbertext {
+//   color: #f2f2f2;
+//   font-size: 12px;
+//   padding: 8px 12px;
+//   position: absolute;
+//   top: 0;
+// }
+//
+// img {
+//   margin-bottom: -4px;
+// }
+//
+// .caption-container {
+//   text-align: center;
+//   background-color: black;
+//   padding: 2px 16px;
+//   color: white;
+// }
+//
+// .demo {
+//   opacity: 0.6;
+// }
+//
+// .active,
+// .demo:hover {
+//   opacity: 1;
+// }
+//
+// img.hover-shadow {
+//   transition: 0.3s
+// }
+//
+// .hover-shadow:hover {
+//   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+// }
+
+
+
+
+
+
+
+
+
+
+// .gallery{
+// background-image: url(../img/b.jpg);
+//  width: 100%;
+//  background-size: cover;
+
+// * {
+// 	transition:all 2s;
+//
+// }
+// #container {
+// 	// position:absolute;
+// 	width:200px;
+// 	height:200px;
+// 	top:calc(50% - 100px);
+// 	left:calc(50% - 100px);
+// 	transform-style:preserve-3d;
+// 	transform:perspective();
+// 	transform-origin:center center -100px;
+//
+//   margin-top: 20px;
+// }
+// #container:hover {
+// 	transform:perspective(0px)
+// 		rotateY(270deg);
+// }
+// #container div {
+// 	width:200px;
+// 	height:200px;
+// 	border:2px solid silver;
+// 	position:absolute;
+// 	transform-style:preserve-3d;
+// }
+// img {
+// 	width:100%;
+// 	height:auto;
+// }
+// #div1 {
+// 	transform:perspective(0px);
+// }
+// #div2 {
+// 	transform:perspective(0px)
+// 		translateX(-100px)
+// 		translateZ(-100px)
+// 		rotateY(90deg);
+// }
+// #div3 {
+// 	transform:perspective(0px)
+// 		translateX(0px)
+// 		translateZ(-200px)
+// 		rotateY(180deg);
+//
+// }
+// #div4 {
+// 	transform:perspective(0px)
+// 		translateX(100px)
+// 		translateZ(-100px)
+// 		rotateY(90deg);
+// 	background:#D5713F;
+// 	color:white;
+// 	line-height:200px;
+// 	font-family:Arial;
+// 	text-align:center;
+// }
+// #button {
+// 	width: 100px;
+// 	background:rgba(255, 255, 255, .2);
+// 	border-radius:15px;
+// 	padding:10px;
+// 	cursor:pointer;
+// }

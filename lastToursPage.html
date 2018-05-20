@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>Главная Страница</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 col-md-2" style="padding:0">
+        <div class="left1"></div>
+      </div>
+      <div class="col-lg-8 col-md-8" style="padding:0">
+        <section id="logo">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="logo_img">
+                  <img src="img/5star.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+               <div class="langs">
+                 <div class="container">
+                   <div class="row">
+                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                       <div class="flag">
+                         <a href="#">
+                             <img src="img/azer.png" alt="">
+                         </a>
+                       </div>
+                     </div>
+                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                       <div class="flag">
+                         <a href="#">
+                             <img src="img/eng.png" alt="">
+                         </a>
+                       </div>
+                     </div>
+                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                       <div class="flag">
+                         <a href="#">
+                             <img src="img/rus3.png" alt="">
+                         </a>
+                       </div>
+                     </div>
+                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                       <div class="flag">
+                         <a href="#">
+                             <img src="img/uk.png" alt="">
+                         </a>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <ul class="navbar-nav">
+                <li>
+                  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="sign_up_button">Sign Up</button>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#"><button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="login_button">Login</button></a>
+                </li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SIGN UP SECTION START -->
+        <div class="orxan">
+          <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <form class="modal-content" action="/action_page.php">
+              <div class="container">
+                <h1>Регистратия</h1>
+                <p>Пожалуйста заполните форму для регистрации</p>
+                <hr>
+                <label for="email"><b>Имя</b></label>
+                <input type="text" placeholder=" Введите Имя" name="email" required>
+
+                <label for="email"><b>Маил</b></label>
+                <input type="text" placeholder="Введите Маил" name="email" required>
+
+                <label for="email"><b>Телефон</b></label>
+                <input type="text" placeholder="Введите Телефон" name="email" required>
+
+                <label for="psw"><b>Пароль</b></label>
+                <input type="password" placeholder="Введите Пароль" name="psw" required>
+
+                <label for="psw-repeat"><b>Повторить Пароль</b></label>
+                <input type="password" placeholder="Повторить Пароль" name="psw-repeat" required>
+
+                <label>
+                  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запнить Меня
+                </label>
+
+
+
+                <div class="clearfix">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отмена</button>
+                  <button type="submit" class="signupbtn">Регистрация</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+  <!-- SIGN UP SECTION FINISH -->
+
+
+
+  <!-- LOGIN SECTION START -->
+  <div class="orxan2">
+    <div id="id02" class="modal">
+
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Имя</b></label>
+          <input type="text" placeholder="Введите Имя" name="uname" required>
+
+          <label for="psw"><b>Пароль</b></label>
+          <input type="password" placeholder="Введите Пароль" name="psw" required>
+
+          <button type="submit">Войти</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Запомнить Меня
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Отмена</button>
+          <span class="psw">Забыл <a href="#">пароль?</a></span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id02');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+        <section id="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <!-- <a class="navbar-brand" href="#"><img src="img/" width="300px" height="100px"></a> -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Главная Страница <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Услуги
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="hotel.html">Отели</a>
+          <a class="dropdown-item" href="avto.html">Авто</a>
+          <a class="dropdown-item" href="mainHostel.html">Хостел</a>
+          <a class="dropdown-item" href="mainResturat.html">Рестораны</a>
+          <a class="dropdown-item" href="village.html">Поездки За Город</a>
+          <a class="dropdown-item" href="photosesion.html">Фотосессия</a>
+          <a class="dropdown-item" href="cloth.html">Прокат Одежд</a>
+        </div>
+      </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Галлерея</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="shop.html">Магазин</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="contact.html">Контант</a>
+              </li>
+
+            </ul>
+          </div>
+        </nav>
+        </section>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="tour">
+                <div class="img">
+                  <div class="carousel">
+                    <figure>
+                      <img src="img/1.jpg" alt="">
+                      <img src="img/1.jpg" alt="">
+                      <img src="img/1.jpg" alt="">
+                      <img src="img/1.jpg" alt="">
+                      <img src="img/1.jpg" alt="">
+                      <img src="img/1.jpg" alt="">
+                      <img src="img/1.jpg" alt="">
+                      <img src="img/1.jpg" alt="">
+                    </figure>
+                    <nav>
+                      <button class="nav prev">Prev</button>
+                      <button class="nav next">Next</button>
+                    </nav>
+                  </div>
+                  <h1>lorem</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non officiis sunt deleniti, laboriosam maiores obcaecati officia ipsa doloremque, enim aliquid dolor temporibus voluptatum, earum est! Quae ipsam harum placeat blanditiis!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comments">
+            <h1>Отзывы</h1>
+            <h3>Lorem</h3><p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor et illo deleniti fuga, illum nulla inventore suscipit id facilis corporis modi non omnis necessitatibus repudiandae maiores atque est beatae quasi.<i class="fas fa-quote-right"></i></p>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="text">
+                  <textarea rows="2" cols="100%" name="comment" form="usrform" placeholder="Enter text here..."></textarea>
+                  </div>
+              </div>
+            </div>
+            <button>Send</button>
+          </div>
+          </div>
+        </div>
+        <!-- SIGN UP SECTION START -->
+        <div class="orxan">
+          <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <form class="modal-content" action="/action_page.php">
+              <div class="container">
+                <h1>Регистратия</h1>
+                <p>Пожалуйста заполните форму для регистрации</p>
+                <hr>
+                <label for="email"><b>Имя</b></label>
+                <input type="text" placeholder=" Введите Имя" name="email" required>
+
+                <label for="email"><b>Маил</b></label>
+                <input type="text" placeholder="Введите Маил" name="email" required>
+
+                <label for="email"><b>Телефон</b></label>
+                <input type="text" placeholder="Введите Телефон" name="email" required>
+
+                <label for="psw"><b>Пароль</b></label>
+                <input type="password" placeholder="Введите Пароль" name="psw" required>
+
+                <label for="psw-repeat"><b>Повторить Пароль</b></label>
+                <input type="password" placeholder="Повторить Пароль" name="psw-repeat" required>
+
+                <label>
+                  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запнить Меня
+                </label>
+
+
+
+                <div class="clearfix">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отмена</button>
+                  <button type="submit" class="signupbtn">Регистрация</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+  <!-- SIGN UP SECTION FINISH -->
+
+
+
+  <!-- LOGIN SECTION START -->
+  <div class="orxan2">
+    <div id="id02" class="modal">
+
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Имя</b></label>
+          <input type="text" placeholder="Введите Имя" name="uname" required>
+
+          <label for="psw"><b>Пароль</b></label>
+          <input type="password" placeholder="Введите Пароль" name="psw" required>
+
+          <button type="submit">Войти</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Запомнить Меня
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Отмена</button>
+          <span class="psw">Забыл <a href="#">пароль?</a></span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id02');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+        <section id="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <!-- <img src="img/turbaku.png" width="300px" height="100px"> -->
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <a href=""><i class="fas fa-phone-volume"></i>Phone</a>
+                <a href=""><i class="fas fa-envelope-open"></i>Email</a>
+                <a href=""><i class="fas fa-map-marker"></i>Address</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        </div>
+        <div class="col-lg-2 col-md-2" style="padding:0">
+
+          <div class="right1">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <a href="https://tawk.to/chat/5adf42e3227d3d7edc24b276/default/?$_tawk_popout=true"><div class="chat"><i class="far fa-comments"></i>Чат</div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <section id="reklam">REKLAM</section> -->
+
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+window.addEventListener('load', () => {
+var
+  carousels = document.querySelectorAll('.carousel')
+;
+for (var i = 0; i < carousels.length; i++) {
+  carousel(carousels[i]);
+}
+});
+function carousel(root) {
+var
+  figure = root.querySelector('figure'),
+  nav = root.querySelector('nav'),
+  images = figure.children,
+  n = images.length,
+  gap = root.dataset.gap || 0,
+  bfc = 'bfc' in root.dataset,
+  theta =  2 * Math.PI / n,
+  currImage = 0
+;
+setupCarousel(n, parseFloat(getComputedStyle(images[0]).width));
+window.addEventListener('resize', () => {
+  setupCarousel(n, parseFloat(getComputedStyle(images[0]).width))
+});
+setupNavigation();
+function setupCarousel(n, s) {
+  var
+    apothem = s / (2 * Math.tan(Math.PI / n))
+  ;
+  figure.style.transformOrigin = `50% 50% ${- apothem}px`;
+
+  for (var i = 0; i < n; i++)
+    images[i].style.padding = `${gap}px`;
+  for (i = 1; i < n; i++) {
+    images[i].style.transformOrigin = `50% 50% ${- apothem}px`;
+    images[i].style.transform = `rotateY(${i * theta}rad)`;
+  }
+  if (bfc)
+    for (i = 0; i < n; i++)
+       images[i].style.backfaceVisibility = 'hidden';
+
+  rotateCarousel(currImage);
+}
+
+function setupNavigation() {
+  nav.addEventListener('click', onClick, true);
+
+  function onClick(e) {
+    e.stopPropagation();
+
+    var t = e.target;
+    if (t.tagName.toUpperCase() != 'BUTTON')
+      return;
+
+    if (t.classList.contains('next')) {
+      currImage++;
+    }
+    else {
+      currImage--;
+    }
+
+    rotateCarousel(currImage);
+  }
+
+}
+
+function rotateCarousel(imageIndex) {
+  figure.style.transform = `rotateY(${imageIndex * -theta}rad)`;
+}
+
+}
+</script>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</html>

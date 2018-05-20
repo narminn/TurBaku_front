@@ -1,0 +1,24 @@
+#footer{
+  width: 100%;
+  background: #333;
+  // margin-top: 20px;
+  a{
+    font-size: 1.3em;
+    margin-left: 5px;
+    color: #fff;
+    &:hover{
+      color: #fc0;
+    }
+  }
+  svg{
+    font-size: 1em;
+    margin-top: 30px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: #fff;
+    &:hover{
+      color: #fc0;
+    }
+  }
+  
+}

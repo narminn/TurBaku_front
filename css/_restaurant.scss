@@ -1,0 +1,65 @@
+#rest{
+  width: 100%;
+  .text{
+    text-align: center;
+    h1{
+      font-size: 4em;
+    }
+  }
+  .star{
+    img{
+      width: 100px;
+      margin-bottom: 10px;
+      // float: right;
+    }
+  }
+  img{
+    width: 100%;
+  }
+  .rooms{
+    width: 100%;
+    background: #f2f2f2;
+    .left{
+      h3{
+        font-family: Playfair Display;
+        font-weight: 400;
+        line-height: 1.1;
+        text-transform: uppercase;
+        padding: 10px;
+        margin-top: 100px;
+      }
+      p{
+        padding: 20px;
+        font-family: Source Sans Pro;
+        line-height: 1.5;
+      }
+    }
+    .right{
+    img{
+      width: 100%;
+      height: 320px;
+      padding: 20px;
+      margin-top: 70px;
+      border-style: inset;
+      border-style: outset;
+    }
+  }
+}
+.chat{
+  width: 237px;
+  height: 45px;
+  background: #fc0;
+  float: right;
+  bottom: 0;
+  right: 0px;
+  position: fixed;
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+  svg{
+    font-size: 1em;
+    // left: 0;
+    // position: absolute;
+  }
+}
+}

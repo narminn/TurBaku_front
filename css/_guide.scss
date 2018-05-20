@@ -1,0 +1,85 @@
+#guide{
+  cursor: pointer;
+  .travel{
+  h2{
+    text-align: center;
+    padding: 25px;
+    font: normal 57px/48px Open Sans;
+    color: #3b3b3b;
+  }
+  p{
+    text-align: center;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 300 !important;
+    color: #adadb3;
+  }
+}
+.about{
+  .first{
+    width: 100px;
+    height: 100px;
+    background: #f9c001;
+    border-radius: 50px;
+    &:hover{
+      background: #f9c001;
+    }
+  }
+  h1{
+    font-size: 1.5em;
+  }
+  h1{
+    &:hover{
+      color: #fc0;
+
+    }
+  }
+  .flip3d{
+    width: 110px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+
+  }
+  .flip3d .front{
+    position: absolute;
+    -webkit-transform: perspective( 500px) rotateY(0deg);
+    transform: perspective( 500px) rotateY(0deg);
+    background: #dcdcdd;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+img{
+  width: 100%;
+}
+  }
+  .flip3d .back{
+    position: absolute;
+    -webkit-transform: perspective( 500px) rotateY(180deg);
+    transform: perspective( 500px) rotateY(180deg);
+    background: #fc0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+    img{
+      width: 100%;
+    }
+  }
+  .flip3d:hover .front{
+    -webkit-transform: perspective( 600px) rotateY(-180deg);
+    transform: perspective( 600px) rotateY(-180deg);
+  }
+  .flip3d:hover .back{
+    -webkit-transform: perspective( 600px) rotateY(0deg);
+    transform: perspective( 600px) rotateY(0deg);
+  }
+}
+}

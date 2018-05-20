@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+  <title>галерея</title>
+</head>
+<body>
+  <!-- <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+</ul> -->
+
+
+
+
+
+ <!-- <section id="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="img/" width="300px" height="100px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Главная Страница <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Услуги
+  </a>
+  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+    <a class="dropdown-item" href="#">Отели</a>
+    <a class="dropdown-item" href="#">Авто</a>
+    <a class="dropdown-item" href="#">Хостел</a>
+    <a class="dropdown-item" href="#">Рестораны</a>
+    <a class="dropdown-item" href="#">Поездки За Город</a>
+    <a class="dropdown-item" href="#">Фотосессия</a>
+    <a class="dropdown-item" href="#">Прокат Одежд</a>
+  </div>
+</li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Галлерея</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Магазин</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Контант</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  </section>  -->
+   <div class="row">
+  <div class="column">
+    <img src="img/h1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/h1.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/h1.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/h1.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div class="row">
+<div class="column">
+  <img src="img/h1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+</div>
+<div class="column">
+  <img src="img/h1.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+</div>
+<div class="column">
+  <img src="img/h1.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+</div>
+<div class="column">
+  <img src="img/h1.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+</div>
+</div>
+
+<div class="row">
+<div class="column">
+  <img src="img/h1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+</div>
+<div class="column">
+  <img src="img/h1.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+</div>
+<div class="column">
+  <img src="img/h1.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+</div>
+<div class="column">
+  <img src="img/h1.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+</div>
+</div>
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="img/h1.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="img/h2.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="img/h3.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="img/h4.jpg" style="width:100%">
+      </div>
+
+      <a class="prev1" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next2" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+
+      <div class="column">
+        <img class="demo cursor" src="img/h3.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/h2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/h4.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/h1.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- <div class="container">
+  <div class="row">
+    <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid rounded">
+    </a>
+    <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid rounded">
+    </a>
+    <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid rounded">
+    </a>
+  </div>
+  <div class="row">
+    <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid rounded">
+    </a>
+    <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid rounded">
+    </a>
+    <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid rounded">
+    </a>
+  </div>
+</div>  -->
+<!-- <script
+ src="http://code.jquery.com/jquery-3.3.1.js"
+ integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+ crossorigin="anonymous"></script> -->
+
+  <script>
+  function openModal() {
+    document.getElementById('myModal').style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById('myModal').style.display = "none";
+  }
+
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+//   $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+//   event.preventDefault();
+//   (this).ekkoLightbox();
+// });
+   </script>
+
+</body>
+</html>

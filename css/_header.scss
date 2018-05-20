@@ -1,0 +1,23 @@
+#header{
+  .navbar{
+    padding: 0;
+  }
+
+  // .navbar-brand{
+  //   height: 90px;
+  //   padding: 5px;
+  // }
+  .collapse{
+    padding: 5px;
+  }
+  .nav-link{
+    font-size: 1em;
+    padding: 15px;
+    color: #f9c001;
+    margin-left: 10px;
+    &:hover{
+      color: gray;
+    }
+  }
+
+}

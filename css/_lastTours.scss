@@ -1,0 +1,27 @@
+.yellowHeader{
+  width: 100%;
+  background: #fc0;
+  color: #fff;
+  padding: 5px;
+}
+#lastTours{
+  width: 100%;
+  padding: 10px;
+ a{
+   text-decoration: none;
+ }
+  .tours{
+    width: 100%;
+    // border: 1px solid black;
+    padding: 5px;
+    color: black;
+    list-style: none;
+    .imgBox{
+      width: 100%;
+      height: 40%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}

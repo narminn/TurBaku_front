@@ -1,0 +1,119 @@
+.gallery{
+  text-align: center;
+  padding: 30px;
+  background: #fc0;
+  color: #fff;
+}
+#ourGallery{
+  width: 100%;
+  padding: 40px 0px;
+  background-image: url(../img/parallax_1.jpg);
+  object-fit: cover;
+  .box{
+    width: 330px;
+    margin-top: 10px;
+    overflow: hidden;
+    img{
+      width: 63%;
+      height: 220px;
+      object-fit: cover;
+      transition: all .8s ease;
+      cursor: pointer;
+      &:hover{
+        transform: scale(1.2);
+        filter: brightness(.5);
+      }
+    }
+  }
+  button{
+    width: 200px;
+    height: 35px;
+    position: relative;
+    left:calc(50% - 100px);
+    margin-top: 20px;
+    border-radius: 50px;
+    background: #fc3;
+  }
+  * {
+  	transition:all 2s;
+
+  }
+  #container {
+  	position:relative;
+  	width:200px;
+  	height:200px;
+  	top:calc(50% - 100px);
+  	left:calc(50% - 100px);
+  	transform-style:preserve-3d;
+  	transform:perspective();
+  	transform-origin:center center -100px;
+
+    margin-top: 20px;
+  }
+  #container:hover {
+  	transform:perspective(0px)
+  		rotateY(270deg);
+  }
+  #container div {
+  	width:200px;
+  	height:200px;
+  	border:2px solid silver;
+  	position:absolute;
+  	transform-style:preserve-3d;
+  }
+  img {
+  	width:100%;
+  	height:auto;
+  }
+  #div1 {
+  	transform:perspective(0px);
+  }
+  #div2 {
+  	transform:perspective(0px)
+  		translateX(-100px)
+  		translateZ(-100px)
+  		rotateY(90deg);
+  }
+  #div3 {
+  	transform:perspective(0px)
+  		translateX(0px)
+  		translateZ(-200px)
+  		rotateY(180deg);
+
+  }
+  #div4 {
+  	transform:perspective(0px)
+  		translateX(100px)
+  		translateZ(-100px)
+  		rotateY(90deg);
+  	background:#D5713F;
+  	color:white;
+  	line-height:200px;
+  	font-family:Arial;
+  	text-align:center;
+  }
+  #button {
+  	width: 100px;
+  	background:rgba(255, 255, 255, .2);
+  	border-radius:15px;
+  	padding:10px;
+  	cursor:pointer;
+  }
+.chat{
+  width: 250px;
+  height: 45px;
+  background: #fc0;
+  float: right;
+  bottom: 0;
+  right: 0px;
+  position: fixed;
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+  svg{
+    font-size: 1em;
+    // left: 0;
+    // position: absolute;
+  }
+}
+}
